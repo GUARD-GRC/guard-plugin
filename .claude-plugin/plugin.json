@@ -8,6 +8,7 @@
     "url": "https://aigovernance.ae"
   },
   "homepage": "https://aigovernance.ae",
+  "privacyPolicyUrl": "https://aigovernance.ae/privacy",
   "repository": "https://github.com/GUARD-GRC/guard-plugin",
   "license": "LicenseRef-GUARD-GRC-Proprietary",
   "keywords": [
@@ -17,5 +18,6 @@
     "regulation",
     "eu-ai-act",
     "gdpr"
-  ]
+  ],
+  "icon": ".claude-plugin/icon.png"
 }
