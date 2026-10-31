@@ -1,0 +1,21 @@
+{
+  "name": "guard-grc",
+  "displayName": "GUARD GRC",
+  "version": "2.0.0",
+  "description": "GUARD GRC workflows for AI governance and compliance, run through the GUARD connector with your own GUARD login.",
+  "author": {
+    "name": "GUARD GRC L.L.C-FZ",
+    "url": "https://aigovernance.ae"
+  },
+  "homepage": "https://aigovernance.ae",
+  "repository": "https://github.com/GUARD-GRC/guard-plugin",
+  "license": "LicenseRef-GUARD-GRC-Proprietary",
+  "keywords": [
+    "ai-governance",
+    "compliance",
+    "grc",
+    "regulation",
+    "eu-ai-act",
+    "gdpr"
+  ]
+}

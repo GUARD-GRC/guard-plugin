@@ -1,0 +1,18 @@
+{
+  "name": "guard-plugin",
+  "owner": {
+    "name": "GUARD GRC L.L.C-FZ",
+    "url": "https://aigovernance.ae"
+  },
+  "description": "The GUARD GRC plugin: AI-governance workflows that use the GUARD connector.",
+  "plugins": [
+    {
+      "name": "guard-grc",
+      "source": "./",
+      "description": "GUARD GRC workflows for AI governance and compliance, run through the GUARD connector with your own GUARD login.",
+      "version": "2.0.0",
+      "category": "productivity",
+      "homepage": "https://aigovernance.ae"
+    }
+  ]
+}

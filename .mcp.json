@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "GUARD": {
+      "type": "http",
+      "url": "https://guard.aigovernance.ae/mcp"
+    }
+  }
+}
