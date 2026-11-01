@@ -9,6 +9,7 @@ Fields that `GUARD:update_company_profile` accepts. Send only the fields that ch
 | `sector` | industry, in plain words (e.g. "retail banking", "healthcare software") | short text |
 | `primary_regulator` | main regulator (e.g. DFSA, CBUAE, FCA, a data protection authority) | short text |
 | `jurisdictions` | where the company operates or where its users are: list of codes below | codes only |
+| `registered_in` | where the company is registered (incorporated), usually one code below | up to 20 codes |
 | `free_text_description` | what the company does, its customers, how it uses or builds AI | 5,000 characters |
 
 ## Jurisdiction codes
@@ -26,7 +27,7 @@ Map the person's words to these codes and read the mapped list back to them befo
 Notes:
 - A firm in the DIFC also often serves the UAE mainland. Ask, don't assume.
 - "We sell online to EU customers" counts as `eu`. Many EU rules apply wherever the company is based.
-- Some regulator documents depend on these codes. For example, the DIFC Reg 10.2.2 attestation needs `ae_difc` (or DFSA as regulator). The privacy notice needs at least one jurisdiction.
+- Where the company is registered decides more than where it operates: a law that reaches companies established in a place applies to every AI system when `registered_in` has that place (a personal-data law only to the systems that process personal data), and a regulator document that needs that law is offered without re-classifying (for example the DIFC Reg 10.2.2 attestation and `ae_difc`). A place only in `jurisdictions` is weighed for each system. The privacy notice needs at least one jurisdiction.
 
 ## Documents
 - PDF only (`.pdf`, real PDF content), up to 20 MB, at most 10 per organisation.

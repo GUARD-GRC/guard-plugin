@@ -4,7 +4,7 @@ description: Prepares an organisation for a regulator request in GUARD through t
 license: Proprietary. © GUARD GRC L.L.C-FZ. All rights reserved.
 compatibility: Needs the GUARD connector (https://guard.aigovernance.ae/mcp) connected, and a GUARD account with two-factor sign-in in an organisation whose plan includes the connector.
 metadata:
-  guard-version: "2.0.0"
+  guard-version: "2.0.2"
   workflow: H - Prepare for a regulator
 ---
 
@@ -64,6 +64,7 @@ GUARD builds a regulator response pack from what the organisation already holds 
 - **"GUARD has switched the GUARD Connector off for your account"**: a setting made in GUARD on purpose, not a fault; only GUARD can switch it back on; the person asks their GUARD contact and does not need to connect again.
 - **"GUARD isn't available through this assistant for any of your organisations right now"**: GUARD switched it off, the plan ended, or an owner disconnected the assistant; the person asks their GUARD contact or an owner and does not need to connect again.
 - **"You are not in a GUARD organisation yet"**: the person sets one up in GUARD, or asks an owner to invite them.
+- **"No GUARD organisation yet"**: first read the rest of GUARD's answer. If it says the person's own GUARD plan does not cover setting one up, pass that on (an owner's invitation, or GUARD support) and stop: ask for no details. Otherwise the person can set one up here: ask whether their organisation already uses GUARD (then they ask its owner for an invitation); if not, ask for the organisation's legal or trading name and save it with `GUARD:update_company_profile` (`company_name`), which creates it, then carry on with their request.
 - **The connector asks to sign in again**: the sign-in ended. Reconnect GUARD in the assistant's connector settings; two-factor sign-in must be on in GUARD.
 - **"GUARD could not complete this just now"**: try once more a little later, then tell the person.
 

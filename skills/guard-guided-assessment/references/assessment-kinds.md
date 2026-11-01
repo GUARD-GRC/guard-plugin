@@ -4,7 +4,7 @@
 | --- | --- | --- | --- |
 | `company_assessment` | the whole organisation | governance across the company: policies, accountability, data, staff skills, use of AI tools including unapproved ("shadow") AI | report + gaps + duty coverage |
 | `ai_system_assessment` | one AI system (needs `ai_system_id`) | that system's purpose, data, autonomy, people affected, jurisdictions, safeguards | report + gaps + duty coverage + GUARD's classification of the system |
-| `company_setup` | the business profile | fills the profile by questions (name, website, jurisdictions, unapproved AI use, description) | answers saved to the business profile; GUARD starts a fresh profile summary |
+| `company_setup` | the business profile | fills the profile by questions (name, website, jurisdictions, where the company is registered, unapproved AI use, description) | answers saved to the business profile; GUARD starts a fresh profile summary |
 
 ## Before you choose
 - If the business profile is thin, GUARD pre-fills less. Filling the profile first (a company setup) saves time.

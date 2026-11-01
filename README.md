@@ -1,11 +1,11 @@
 # GUARD GRC plugin
 
-The GUARD GRC plugin brings GUARD's AI-governance workflows into Claude. Each skill is a step-by-step playbook that works through the GUARD connector (https://guard.aigovernance.ae/mcp) with your own GUARD login, so every answer comes from your GUARD organisation and GUARD's regulation library. Version 2.0.0.
+The GUARD GRC plugin brings GUARD's AI-governance workflows into Claude. Each skill is a step-by-step playbook that works through the GUARD connector (https://guard.aigovernance.ae/mcp) with your own GUARD login, so every answer comes from your GUARD organisation and GUARD's regulation library. Version 2.0.2.
 
 ## Skills
 
 - **Build my AI system inventory** (`guard-ai-inventory`): Builds and maintains an organisation's AI system inventory in GUARD through the GUARD connector, and explains GUARD's classification of each system.
-- **Set up my business in GUARD** (`guard-business-setup`): Sets up or updates an organisation's business profile in GUARD through the GUARD connector, covering company details, jurisdictions, company PDFs and GUARD's profile summary, saving each detail to GUARD as soon as the person confirms it.
+- **Set up my business in GUARD** (`guard-business-setup`): Sets up or updates an organisation's business profile in GUARD through the GUARD connector, covering company details, where the company is registered and where it operates, company PDFs and GUARD's profile summary, saving each detail to GUARD as soon as the person confirms it.
 - **Close my gaps** (`guard-close-gaps`): Closes an organisation's assessment gaps in GUARD through the GUARD connector by having GUARD write a policy for chosen gaps, then working its implementation plan (action items, owners, deadlines, status) to completion.
 - **Run a guided assessment** (`guard-guided-assessment`): Runs a guided GUARD assessment through the GUARD connector, one question at a time, for the whole company or for one AI system, and GUARD's own guided company setup (the business profile by questions), with GUARD saving each answer as it is given, then reads GUARD's report, gaps and duty coverage.
 - **My GUARD to-dos** (`guard-my-todos`): Shows what is waiting on the person in GUARD through the GUARD connector (sign-offs to approve or review, action items assigned to them, regulatory updates to acknowledge), requests or withdraws sign-offs, and prepares an approval or rejection that the person confirms on a GUARD page with a fresh authenticator code.
